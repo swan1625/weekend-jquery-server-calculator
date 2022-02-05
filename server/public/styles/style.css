@@ -1,0 +1,36 @@
+.opperators{
+
+    background-color: #f44336;; 
+    border: none;
+    color: white;
+    padding: 28px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size:60px;
+    text-indent: 5px;
+    position: relative;
+    left: 300px;
+    top: 10px;
+}
+.parentDiv{
+    align-items: center;
+
+    border: 5px red;
+    background-color: salmon;
+}
+
+#input-two{
+    position: relative;
+    left: 350px;
+    top: 40px;
+
+}
+body {
+background-color: sandybrown;
+position: absolute;
+top: 0;
+bottom: 0;
+}
+header{
+    width: 700px;
+}
