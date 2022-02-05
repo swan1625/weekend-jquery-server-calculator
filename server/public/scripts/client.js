@@ -14,8 +14,8 @@ function runMath(){                             // function that
     let sign = $('#signs').val();
     let mathObj = {                       
     a: numOne,
-    b: numTwo,
-    signs: sign
+    signs: sign,
+    b: numTwo
 }
 
 console.log(mathObj);
@@ -48,15 +48,4 @@ function getMath() {
         console.log(err);
     })
  }  //end getMath
-
-// }
-// if (sign == 'add'){
-//     answer = (a + b);
-// } else if (sign == 'sub' ){
-//     answer = (a - b);
-// } else if (sign == 'mul' ){
-//     answer = (a * b);
-// }else if (sign == 'div' ){
-//     answer = (a / b);
-// }
 

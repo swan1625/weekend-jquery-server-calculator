@@ -23,23 +23,21 @@ app.get ('/mathProblems', function(req, res) {
   
 app.post('/mathProblems', function(req, res) {
     console.log('in /mathProbs GET', req.body);
-    let a = req.body.numOne;
-    let b = req.body.numTwo;
-    let sign = req.body.sign;
+    let a = Number(req.body.a);                    
+    let sign = req.body.signs;
+    let b = Number(req.body.b);
     let answer = 0;
-
-    if (sign == 'add'){
+    if (sign === 'add'){
         answer = (a + b);
-    } else if (sign == 'sub' ){
+    } else if (sign === 'sub' ){
         answer = (a - b);
-    } else if (sign == 'mul' ){
+    } else if (sign === 'mul' ){
         answer = (a * b);
-    } else if (sign == 'div' ){
+    } else if (sign === 'div' ){
         answer = (a / b);
-        return; 
+        return answer; 
     }
 console.log(answer);
-
 
 let answerObj = {
     first: a,
@@ -47,12 +45,18 @@ let answerObj = {
     sign: sign,
     answer: answer
 }
-    ansHistArr.push( answerObj );
-    res.send(answerObj);
+    problemArr.push( answerObj );
+    res.Sendsend(200);
+
 })
 
 
   
+
+
+
+
+
 
 
 // --------------------------------------------------------------------- 
