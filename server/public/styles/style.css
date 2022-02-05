@@ -1,5 +1,4 @@
-.opperators{
-
+#signs{
     background-color: #f44336;; 
     border: none;
     color: white;
@@ -13,24 +12,34 @@
     top: 10px;
 }
 .parentDiv{
-    align-items: center;
-
-    border: 5px red;
-    background-color: salmon;
+    height: 600px;
+    width: 1000px; 
+    background-color: transparent;
 }
 
 #input-two{
+    font-size: 24px;
+    width: 100px;
     position: relative;
-    left: 350px;
+    left: 550px;
     top: 40px;
-
 }
-body {
-background-color: sandybrown;
-position: absolute;
-top: 0;
-bottom: 0;
+
+input[type="text"]
+{
+    font-size:56px;
 }
 header{
-    width: 700px;
+    text-align: center;
+    font-size: 40px;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: linear-gradient(90deg, forestgreen, transparent 40%), linear-gradient(-125deg, red, transparent 40%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

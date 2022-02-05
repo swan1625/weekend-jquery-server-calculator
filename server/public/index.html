@@ -15,18 +15,18 @@
       <header id='header'>Calculadora para niños</header>
       <div class='parentDiv'> 
         <div id='input-one' >
-        <input style="height: 120px; width: 100px;" placeholder="Numero Ono">
+        <input id="valueTwo" style="height: 120px; width: 100px;" placeholder="Numero Ono">
       </div>
    <div> 
-    <select class='opperators'>
-      <option value=add>+</option>
-      <option value=sub>-</option>
-      <option value=mul>*</option>
-      <option value=div>÷</option>
+    <select id='signs'>
+      <option value='add'>+</option>
+      <option value='sub'>-</option>
+      <option value='mul'>*</option>
+      <option value='div'>÷</option>
     </select>
 
     <div id='input-two' > 
-      <input style="height: 100px; width: 80px;" placeholder="Numero Dos">
+      <input  type ="text" id="valueTwo" style="height: 100px; width: 80px;" placeholder="Numero Dos">
     </div>
 
 
@@ -35,9 +35,11 @@
       </div>
 
     <div> 
-    <button type="button"> = </button>  
+    <button id="equal-button" type="button"> = </button>  
     </div>
 
+
+    <div id="result">  </div>
   </div>
      <!-- <div class="math">
   <button id="add">+</button>
