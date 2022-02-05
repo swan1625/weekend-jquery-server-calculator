@@ -1,44 +1,84 @@
 #signs{
-    background-color: #f44336;; 
+    background-color: burlywood; 
     border: none;
     color: white;
     padding: 28px 22px;
     text-align: center;
     text-decoration: none;
-    font-size:60px;
+    font-size:90px;
     text-indent: 5px;
     position: relative;
-    left: 300px;
+    left: 600px;
     top: 10px;
 }
+#clear-button{
+    background-color: burlywood; 
+    border: none;
+    color: white;
+    padding: 28px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size:90px;
+    text-indent: 5px;
+}
+
+
+#equal-button{
+    background-color: burlywood; 
+    border: none;
+    color: white;
+    padding: 28px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size:90px;
+    text-indent: 5px;
+}
+
+
 .parentDiv{
     height: 600px;
     width: 1000px; 
     background-color: transparent;
 }
-
+#input-one{
+    font-size: 24px;
+    width: 100px;
+    position: relative;
+    left: 50px;
+    top: 40px;
+    
+}
 #input-two{
     font-size: 24px;
     width: 100px;
     position: relative;
-    left: 550px;
+    left: 850px;
     top: 40px;
+    
+}
+input[type="text"]{
+    border-radius: 25px;
+    font-size:56px;
+    
 }
 
-input[type="text"]
-{
+input[type="text"]:focus{
     font-size:56px;
+    border-radius: 25px;
+    background-color: rgb(239, 243, 189);
 }
 header{
+    background-color: whitesmoke;
+    font-family: Georgia, serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 html {
     height: 100%;
 }
 body {
     height: 100%;
-    background: linear-gradient(90deg, forestgreen, transparent 40%), linear-gradient(-125deg, red, transparent 40%);
+    background: linear-gradient(90deg, rgb(66, 170, 66), transparent 40%), linear-gradient(-90deg, rgb(156, 61, 61), transparent 40%);
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
