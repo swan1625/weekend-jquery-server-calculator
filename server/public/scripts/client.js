@@ -17,6 +17,7 @@ function runMath(){                             // function that
     b: numTwo,
     signs: sign
 }
+
 console.log(mathObj);
 if(numOne === '' || numTwo === '') {                                              //alert if input values arent defined
     alert('Please fill out both numbers! / ¡por favor llene ambos números!');
@@ -48,10 +49,6 @@ function getMath() {
     })
  }  //end getMath
 
-//     $.ajax({
-//         method: 'POST',
-//         url: '/guesses',
-//         data: {
 // }
 // if (sign == 'add'){
 //     answer = (a + b);
@@ -63,12 +60,3 @@ function getMath() {
 //     answer = (a / b);
 // }
 
-
-//    if (signs == 'add'){
-//      signs = '+';
-// } else if (signs == 'sub' ){
-//     signs = '-';
-// } else if (signs == 'mul' ){
-//     signs = '*';
-// }else if (signs == 'div' ){
-//     signs = '*';
