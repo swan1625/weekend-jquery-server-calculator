@@ -23,30 +23,31 @@ app.get ('/mathProblems', function(req, res) {
   
 app.post('/mathProblems', function(req, res) {
     console.log('in /mathProbs GET', req.body);
-    let a = Number(req.body.a);                    
+    let a = Number(req.body.a);                     //declaring variable to make loop less jumbled
     let sign = req.body.signs;
     let b = Number(req.body.b);
-    let answer = 0;
-    if (sign === 'add'){
+    let answer = 0;  
+    if (sign === '+'){                             /// running calculations      
         answer = (a + b);
-    } else if (sign === 'sub' ){
+    } else if (sign === '-' ){
         answer = (a - b);
-    } else if (sign === 'mul' ){
+    } else if (sign === '*' ){
         answer = (a * b);
-    } else if (sign === 'div' ){
+    } else if (sign === '÷' ){
         answer = (a / b);
         return answer; 
     }
-console.log(answer);
+    console.log(answer);
 
-let answerObj = {
-    first: a,
-    second: b,
-    sign: sign,
-    answer: answer
-}
-    problemArr.push( answerObj );
-    res.Sendsend(200);
+    let answerObj = {                    // declaring new object to include answer
+        first: a,
+        sign: sign,
+        second: b,
+        answer: answer
+    }
+
+    problemArr.push( answerObj );      //pushing new object to array in server
+    res.sendStatus(201);
 
 })
 

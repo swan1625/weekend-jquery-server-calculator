@@ -4,7 +4,7 @@ function onReady() {
   
     // getMath();
     $( '#equal-button' ).on( 'click',  runMath);    // equal button click listener
-    // $( '#clear-button' ).on( 'click', clearInputs );   //clear button click listener 
+    $( '#clear-button' ).on( 'click', clearInputs );   //clear button click listener 
 }
 
 function runMath(){                             // function that 
@@ -49,3 +49,7 @@ function getMath() {
     })
  }  //end getMath
 
+function clearInputs() {
+    $('#valueOne').val('');
+    $('#valueTwo').val('');
+}
