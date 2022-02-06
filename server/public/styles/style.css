@@ -75,10 +75,13 @@ input[type="text"]:focus{
     background-color: rgb(239, 243, 189);
 }
 header{
-    background-color: rgba(204, 211, 146, 0.424);
+    background-color: rgba(162, 170, 92, 0.424);
     font-family: Georgia, serif;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid rgb(8, 34, 59); 
+
 }
 html {
     height: 100%;
@@ -109,7 +112,7 @@ body {
     font-family: Georgia, serif;
     position: relative;
     left: 110px;
-    top: 100px; 
+    top: 200px; 
   }
 
 .test-two:hover{
@@ -127,7 +130,7 @@ body {
     font-family: Georgia, serif;
     position: relative;
     left: 580px;
-    top: 50px; 
+    top: 155px; 
   }
 
 #results{
@@ -155,7 +158,7 @@ body {
     font-family: Georgia, serif;
     position: relative;
     left: 330px;
-    top: 80px; 
+    top: 180px; 
 
   }
 .test-four:hover{
@@ -174,7 +177,7 @@ body {
     font-family: Georgia, serif;
     position: relative;
     left: 775px;
-    top: 70px; 
+    top: 170px; 
   }
   .test-five:hover{
     font-size: 0;
@@ -193,8 +196,8 @@ body {
     height: 30px;
     font-family: Georgia, serif;
     position: relative;
-    left: 1055px;
-    top: 60px; 
+    left: 1010px;
+    top: 115px; 
   }
 
 #answer-history{
@@ -206,5 +209,44 @@ body {
     position: relative;
     left: 995px;
     bottom:580px; 
-
 }
+
+.test-six:hover{
+    font-size: 0;
+}
+.test-six:hover:before {
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: Georgia, serif;
+    content: attr(data-hover);
+  }  
+  #hist-text{
+    font-size: 45px;
+    text-decoration: underline;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-family: Georgia, serif;
+    position: relative;
+    left: 1045px;
+    top: 325px; 
+  }
+
+  .test-seven:hover{
+    font-size: 0;
+}
+.test-seven:hover:before {
+    font-size: 30px;
+    font-family: Georgia, serif;
+    content: attr(data-hover);
+  }  
+  #disc-text{
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    font-family: Georgia, serif;
+    position: relative;
+    left: 1005px;
+    top: -120px; 
+  }

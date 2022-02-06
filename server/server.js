@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // --------------------------------------------------------------------- 
 
-problemArr = [];       // empty array for incoming problem pieces     
+problemArr = [];       // empty array for math equation objects     
 
 // --------------------------------------------------------------------- 
 
@@ -41,7 +41,8 @@ app.post('/mathProblems', function(req, res) {
         answer: Math.round(answer * 100) / 100
     }
 
-    problemArr.push( answerObj );      //pushing new object to array in server
+
+    problemArr.push( answerObj );                                        //pushing new object to array in server
     res.sendStatus(201);
 
 })
