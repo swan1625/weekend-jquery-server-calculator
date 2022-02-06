@@ -38,8 +38,8 @@ app.post('/mathProblems', function(req, res) {
         first: a,
         sign: sign,
         second: b,
-        answer: Math.round(answer * 100) / 100        // having answer only have 2 decimal places
-    }
+        answer: Math.round(answer * 100) / 100   // having answer only have 2 decimal places.  
+    }                                           // styling choice and framing this project as a calc for kids
 
 
     problemArr.push( answerObj );            //pushing new object to array in server
