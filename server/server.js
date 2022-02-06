@@ -1,24 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const app = express();
-
 const port = 5000;
-
 app.use(express.static('server/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // --------------------------------------------------------------------- 
 
-problemArr = [];       // empty array for incoming problem pieces
-ansHistArr = [];       // empty array for history  
-
+problemArr = [];       // empty array for incoming problem pieces     
 
 // --------------------------------------------------------------------- 
 
 app.get ('/mathProblems', function(req, res) { 
     console.log('in /mathProbs GET');
-    res.send(problemArr);
+    res.send(problemArr);                       //sending array back to client
   });
   
 app.post('/mathProblems', function(req, res) {
@@ -35,8 +30,8 @@ app.post('/mathProblems', function(req, res) {
         answer = (a * b);
     } else if (sign === '÷' ){
         answer = (a / b);
-        return answer; 
     }
+    
     console.log(answer);
 
     let answerObj = {                    // declaring new object to include answer
@@ -50,15 +45,6 @@ app.post('/mathProblems', function(req, res) {
     res.sendStatus(201);
 
 })
-
-
-  
-
-
-
-
-
-
 
 // --------------------------------------------------------------------- 
 

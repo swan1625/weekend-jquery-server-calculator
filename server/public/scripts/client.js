@@ -1,15 +1,15 @@
 $(document).ready(onReady);
 
 function onReady() {
-  
     // getMath();
     $( '#equal-button' ).on( 'click',  runMath);    // equal button click listener
     $( '#clear-button' ).on( 'click', clearInputs );   //clear button click listener 
-}
+} //end onReady
 
-function runMath(){                             // function that 
+function runMath(){           // function takes in values, puts into an object, and sends to server
+                        
     console.log('working');
-    let numOne = $('#valueOne').val();
+    let numOne = $('#valueOne').val();            
     let numTwo = $('#valueTwo').val();
     let sign = $('#signs').val();
     let mathObj = {                       
@@ -19,9 +19,8 @@ function runMath(){                             // function that
 }
 
 console.log(mathObj);
-if(numOne === '' || numTwo === '') {                                              //alert if input values arent defined
-    alert('Please fill out both numbers! / ¡por favor llene ambos números!');
-    // return;
+if(numOne === '' || numTwo === '') {                                              //alert if one or both input values are empty
+    alert('Please fill out both numbers! / ¡por favor llene ambos números!');  
 }
     $.ajax({
         method: 'POST',
@@ -30,12 +29,13 @@ if(numOne === '' || numTwo === '') {                                            
     }).then( function(response){
         console.log('back from post with', response);
         getMath();
+        $('#valueOne').val('');
+        $('#valueTwo').val('');   
     }).catch ( function( err ){
         alert ('error occured, see console for detail');
         console.log(err);
     })
- }    
-
+}   //end runMath
 
 function getMath() {
     $.ajax({
@@ -43,13 +43,30 @@ function getMath() {
         url: '/mathProblems',
     }).then( function (response ){
         console.log('back from get with', response);
+        renderToDom(response);
+        renderToDomResult(response);
     }).catch ( function( err ){
         alert ('error occured, see console for detail');
         console.log(err);
     })
- }  //end getMath
+}  //end getMath
 
-function clearInputs() {
+function renderToDomResult(arr) {
+    for(let ans of arr){
+        $('#result-display').empty();
+        $('#result-display').append(`${ans.answer}`);
+    }
+} //end renderToDomResult
+
+ function renderToDom(arr){                //function that puts our equations on the dom 
+    $('#answer-display').empty();
+    for(let ans of arr){
+        $('#answer-display').append(`<li>${ans.first} ${ans.sign} ${ans.second} = ${ans.answer}</li>`) 
+    }
+    
+} //end renderToDom
+
+function clearInputs() {       // function clears input fields upon button click
     $('#valueOne').val('');
     $('#valueTwo').val('');
-}
+} //end clearInputs

@@ -13,9 +13,15 @@
     </head>
     <body>
       <header id='header'>Calculadora para niños</header>
-      <div class='parentDiv'> 
+    <div class='parentDiv'> 
+        <div id="uno">
+          <span class="test" data-hover="Number 1">Numero uno</span>
+        </div>
+        <div id="dos">
+          <span class="testtwo" data-hover="Number 2">Numero dos</span>
+        </div>
         <div id='input-one'>
-        <input type ="text" id="valueOne" style="height: 220px; width: 200px;" placeholder="Numero Ono">
+        <input type ="text" id="valueOne" style="height: 220px; width: 200px;" maxlength="4" placeholder="#">
       </div>
    <div> 
     <select id='signs'>
@@ -26,7 +32,7 @@
     </select>
 
     <div id='input-two' > 
-      <input  type ="text" id="valueTwo" style="height: 220px; width: 200px;" placeholder="Numero Dos">
+      <input  type ="text" id="valueTwo" style="height: 220px; width: 200px;" maxlength="4" placeholder="#">
     </div>
 
 
@@ -40,14 +46,12 @@
     <div> 
     <button id="equal-button" type="button"> = </button>  
     </div>
-<div id="uno">
-    <span class="test" data-hover="Number 1">Numero uno</span>
-  </div>
 
 
+    <div><span id="result-display"> </span></div>
 
     <div id="answer-history">
-      <ul id="answer-list">
+      <ul id="answer-display">
 
 
   
