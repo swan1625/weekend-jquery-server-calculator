@@ -1,5 +1,5 @@
 #signs{
-    background-color: burlywood; 
+    background-color: rgb(192, 27, 27); 
     border: none;
     color: white;
     padding: 28px 22px;
@@ -8,23 +8,27 @@
     font-size:90px;
     text-indent: 5px;
     position: relative;
-    left: 645px;
-    top: 10px;
+    left: 395px;
+    top: -125px;
 }
 
 #clear-button{
-    background-color: burlywood; 
-    border: none;
-    color: white;
-    padding: 28px 22px;
+    background-color: rgba(211, 45, 45, 0.746); 
+    font-family: Georgia, serif;
+    border: black;
+    color: #ffffff;
+    padding: 20px 5px;
     text-align: center;
     text-decoration: none;
-    font-size:90px;
-    text-indent: 5px;
+    font-size:40px;
+    text-indent: 0px;
+    position: relative;
+    left: 340px;
+    bottom: 300px;
 }
 
 #equal-button{
-    background-color: burlywood; 
+    background-color: rgb(28, 98, 21); 
     border: none;
     color: white;
     padding: 28px 22px;
@@ -32,6 +36,9 @@
     text-decoration: none;
     font-size:90px;
     text-indent: 5px;
+    position: relative;
+    left: 850px;
+    bottom: 600px; 
 }
 
 .parentDiv{
@@ -44,16 +51,16 @@
     font-size: 24px;
     width: 100px;
     position: relative;
-    left: 300px;
-    top: 220px;  
+    left: 110px;
+    top: 60px;  
 }
 
 #input-two{
     font-size: 24px;
     width: 100px;
     position: relative;
-    left: 890px;
-    bottom: 165px;
+    left: 580px;
+    bottom: 325px;
     
 }
 
@@ -68,7 +75,7 @@ input[type="text"]:focus{
     background-color: rgb(239, 243, 189);
 }
 header{
-    background-color: rgb(185, 135, 190);
+    background-color: rgba(204, 211, 146, 0.424);
     font-family: Georgia, serif;
     text-align: center;
     font-size: 60px;
@@ -90,13 +97,33 @@ body {
 .test:hover {
     font-size: 0;
   }
+  
 .test:hover:before {
-    font-size: 55px;
+    font-size: 48px;
+    font-family: Georgia, serif;
     content: attr(data-hover);
   }  
 #uno{
-    font-size: 55px;
+    font-size: 48px;
+    font-family: Georgia, serif;
     position: relative;
-    left: 300px;
-    top: 220px; 
+    left: 110px;
+    top: 100px; 
+  }
+
+.test-two:hover{
+    font-size: 0;
+}
+.test-two:hover:before {
+    font-size: 48px;
+    font-family: Georgia, serif;
+    content: attr(data-hover);
+  }  
+
+  #dos{
+    font-size: 48px;
+    font-family: Georgia, serif;
+    position: relative;
+    left: 580px;
+    top: 50px; 
   }
