@@ -38,7 +38,7 @@ app.post('/mathProblems', function(req, res) {
         first: a,
         sign: sign,
         second: b,
-        answer: answer
+        answer: Math.round(answer * 100) / 100
     }
 
     problemArr.push( answerObj );      //pushing new object to array in server

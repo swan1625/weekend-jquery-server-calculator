@@ -53,8 +53,9 @@ function getMath() {
 
 function renderToDomResult(arr) {
     for(let ans of arr){
+        let a = (`${ans.answer}`);
         $('#result-display').empty();
-        $('#result-display').append(`${ans.answer}`);
+        $('#result-display').append(a);
     }
 } //end renderToDomResult
 

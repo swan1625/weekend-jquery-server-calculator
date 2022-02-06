@@ -1,6 +1,6 @@
 #signs{
     background-color: rgb(192, 27, 27); 
-    border: none;
+    border: 30px, black;
     color: white;
     padding: 28px 22px;
     text-align: center;
@@ -15,7 +15,7 @@
 #clear-button{
     background-color: rgba(211, 45, 45, 0.746); 
     font-family: Georgia, serif;
-    border: black;
+    border: 5px, black;
     color: #ffffff;
     padding: 20px 5px;
     text-align: center;
@@ -23,14 +23,14 @@
     font-size:40px;
     text-indent: 0px;
     position: relative;
-    left: 340px;
+    left: 330px;
     bottom: 300px;
 }
 
 #equal-button{
     background-color: rgb(28, 98, 21); 
-    border: none;
     color: white;
+    border: 12px, black;
     padding: 28px 22px;
     text-align: center;
     text-decoration: none;
@@ -99,12 +99,13 @@ body {
   }
   
 .test:hover:before {
-    font-size: 48px;
+    font-size: 42px;
     font-family: Georgia, serif;
     content: attr(data-hover);
   }  
 #uno{
-    font-size: 48px;
+    font-size: 42px;
+    width: 300px;
     font-family: Georgia, serif;
     position: relative;
     left: 110px;
@@ -115,15 +116,95 @@ body {
     font-size: 0;
 }
 .test-two:hover:before {
-    font-size: 48px;
+    font-size: 42px;
     font-family: Georgia, serif;
     content: attr(data-hover);
   }  
 
   #dos{
-    font-size: 48px;
+    font-size: 42px;
+    width: 300px;
     font-family: Georgia, serif;
     position: relative;
     left: 580px;
     top: 50px; 
   }
+
+#results{
+    position: relative;
+    font-weight: bold;
+    font-size: 100px;
+    width: 150px;
+    height:50px;
+    left: 1050px;
+    bottom: 730px; 
+}
+.test-three:hover{
+    font-size: 0;
+}
+.test-three:hover:before {
+    font-size: 23px;
+    font-family: Georgia, serif;
+    content: attr(data-hover);
+  }  
+  #opp{
+    font-size: 23px;
+    text-align: center;
+    width: 250px;
+    height: 15px;
+    font-family: Georgia, serif;
+    position: relative;
+    left: 330px;
+    top: 80px; 
+
+  }
+.test-four:hover{
+    font-size: 0;
+}
+.test-four:hover:before {
+    font-size: 23px;
+    font-family: Georgia, serif;
+    content: attr(data-hover);
+  }  
+ #eq-text{
+    font-size: 23px;
+    text-align: center;
+    width: 250px;
+    height: 15px;
+    font-family: Georgia, serif;
+    position: relative;
+    left: 775px;
+    top: 70px; 
+  }
+  .test-five:hover{
+    font-size: 0;
+}
+.test-five:hover:before {
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: Georgia, serif;
+    content: attr(data-hover);
+  }  
+  #ans-text{
+    font-size: 45px;
+    text-decoration: underline;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-family: Georgia, serif;
+    position: relative;
+    left: 1055px;
+    top: 60px; 
+  }
+
+#answer-history{
+    font-size: 25px;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    font-family: Georgia, serif;
+    position: relative;
+    left: 995px;
+    bottom:580px; 
+
+}

@@ -15,49 +15,50 @@
       <header id='header'>Calculadora para niños</header>
     <div class='parentDiv'> 
         <div id="uno">
-          <span class="test" data-hover="Number 1">número uno</span>
+          <span class="test" data-hover="Number 1">Número uno</span>
         </div>
         <div id="dos">
-          <span class="test-two" data-hover="Number 2">número dos</span>
+          <span class="test-two" data-hover="Number 2">Número dos</span>
         </div>
+        <div id="opp">
+          <span class="test-three" data-hover="Select a sign">Seleccionar un signo</span>
+        </div>
+        <div id="eq-text">
+          <span class="test-four" data-hover="Calculate!">¡Calcular!</span>
+        </div>
+        <div id="ans-text">
+          <span class="test-five" data-hover="Result">Resultado</span>
+        </div>
+
         <div id='input-one'>
-        <input type ="text" id="valueOne" style="height: 220px; width: 200px;" maxlength="4" placeholder="#">
-      </div>
-   <div> 
-    <select id='signs'>
-      <option value='+'>+</option>
-      <option value='-'>-</option>
-      <option value='*'>*</option>
-      <option value='÷'>÷</option>
-    </select>
+          <input type ="text" id="valueOne" style="height: 220px; width: 200px;" maxlength="4" placeholder="#">
+        </div>
+        <div> 
+          <select id='signs'>
+              <option value='+'>+</option>
+              <option value='-'>-</option>
+              <option value='*'>*</option>
+              <option value='÷'>÷</option>
+          </select>
 
-    <div id='input-two' > 
-      <input  type ="text" id="valueTwo" style="height: 220px; width: 200px;" maxlength="4" placeholder="#">
-    </div>
+        <div id='input-two' > 
+          <input  type ="text" id="valueTwo" style="height: 220px; width: 200px;" maxlength="4" placeholder="#">
+        </div>
 
+       <div> 
+          <button id="clear-button"type="button"> Clear/Borrar </button>  
+        </div>
 
-
-
-
-    <div> 
-      <button id="clear-button"type="button"> Clear/Claro  </button>  
-      </div>
-
-    <div> 
-    <button id="equal-button" type="button"> = </button>  
-    </div>
+        <div> 
+          <button id="equal-button" type="button"> = </button>  
+        </div>
 
 
-    <div><span id="result-display"> </span></div>
+           <div id="results"><span id="result-display"> </span></div>
 
-    <div id="answer-history">
-      <ul id="answer-display">
-
-
-  
-      </ul>
-    
-    </div>
+         <div id="answer-history">
+            <ul id="answer-display"></ul>
+          </div>
   </div>
   </div>
         <script src="" async defer></script>
