@@ -24,11 +24,11 @@ app.post('/mathProblems', function(req, res) {
     let answer = 0;  
     if (sign === '+'){                             /// running calculations      
         answer = (a + b);
-    } else if (sign === '-' ){
+    } else if (sign === '-'){
         answer = (a - b);
-    } else if (sign === '*' ){
+    } else if (sign === '*'){
         answer = (a * b);
-    } else if (sign === '÷' ){
+    } else if (sign === '÷'){
         answer = (a / b);
     }
     

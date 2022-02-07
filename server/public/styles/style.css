@@ -74,7 +74,7 @@ input[type="text"]:focus{
     border-radius: 25px;
     background-color: rgb(239, 243, 189);
 }
-header{
+/* header{
     background-color: rgba(162, 170, 92, 0.424);
     font-family: Georgia, serif;
     text-align: center;
@@ -82,7 +82,34 @@ header{
     padding-bottom: 5px;
     border-bottom: 5px solid rgb(8, 34, 59); 
 
+} */
+
+header{
+  font-family: 'Baloo Tamma', cursive;
+  background: rgba(152, 152, 93, 0.468);
+  text-align: center;
+  width: 100%;
+  /* margin: 0px auto; */
+  color: white;
+  font-size: 40px;
+  top: 5%;
+  letter-spacing: 5px;
+  position: absolute;
+  margin-top: -40px;
+  
+  text-shadow: -1px -1px 0px rgb(51, 55, 27),
+    2px 2px 0px rgb(51, 55, 27),
+    4px 4px 0px rgb(51, 55, 27);
 }
+
+
+
+
+
+
+
+
+
 html {
     height: 100%;
 }
@@ -197,7 +224,7 @@ body {
     font-family: Georgia, serif;
     position: relative;
     left: 1025px;
-    top: 115px; 
+    top: 120px; 
   }
 
 #answer-history{
@@ -248,5 +275,5 @@ body {
     font-family: Georgia, serif;
     position: relative;
     left: 1005px;
-    top: -120px; 
+    top: -100px; 
   }
