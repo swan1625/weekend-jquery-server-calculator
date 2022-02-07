@@ -1,9 +1,24 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Server Side Caluclator 
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Duration: 15-20 hours of work
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+When asked to build a simple server side calculator, I decided to put my own twist on it. I present you a Spanish/English calculator made for kids!
+
+This simple calculator has more going on then meets the eye. The calculations and history of equations are on the server side. On the client side, I made simple text that changes from Spanish to English on cursor hover. This was made to be a educational tool for both English and Spanish speakers and those inbetween. 
+
+Prerequisites
+
+Node.js
+Express 
+
+List technologies and frameworks here
+
+HTML, CSS, JavaScript, Jquery, Express, Node
+
+Acknowledgement
+Thanks to the instructors at Prime Digital Academy who equipped and helped me to make this application a reality, as well as my peers who i've been learning from and getting support and vise versa. Couldn't have done it with out you! 
+
+Support
+If you have suggestions or issues, please email me at swan1625@icloud.com
